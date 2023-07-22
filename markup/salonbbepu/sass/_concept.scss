@@ -1,0 +1,113 @@
+#concept {
+    margin-top: 0;
+    width: 100%;
+    height: 960px;
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 40%, #A1938689 40%, #A1938689 100%);
+
+    @include sp {
+        height: 710px;
+        background: linear-gradient(180deg, #A193861F 0%, #A193861F 24%, #A1938689 24%, #A1938689 100%);
+    }
+
+}
+
+.menu-title {
+    margin-bottom: 50px;
+}
+
+.concept-wrap {
+    padding-top: 260px;
+    margin-left: 100px;
+    width: 1077px;
+
+    @include tab {
+        padding-top: 60px;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    .concept-img {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+        @include tab {
+            margin-left: 0;
+
+        }
+
+        @include sp {
+            padding-top: 50px;
+        }
+
+
+
+        img {
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-right: 10px;
+
+                @include tab {
+                    margin-right: 7px;
+                }
+            }
+
+            @include tab {
+                width: 100%;
+                max-width: 46vw;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+
+
+        }
+    }
+}
+
+.catch {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    color: #fff;
+
+    @include tab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .catch-title {
+        width: 445px;
+        font-size: 4rem;
+
+        margin-left: 70px;
+        margin-right: 60px;
+        font-family: ヒラギノ明朝;
+        letter-spacing: 0.25em;
+
+        @include tab {
+            font-size: 2.8rem;
+            margin-top: 50px;
+
+        }
+    }
+
+    .catch-text {
+        width: 43%;
+        font-size: 1.6rem;
+        font-family: ヒラギノ角ゴ Pro;
+        letter-spacing: 0.1em;
+        margin-top: 50px;
+        text-align: left;
+
+        @include tab {
+            width: 89%;
+            margin-top: 1.8rem;
+        }
+    }
+}

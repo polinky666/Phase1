@@ -1,0 +1,34 @@
+#entry {
+    height: 477px;
+    width: 100%;
+    position: relative;
+}
+
+.entry-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 127px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include sp {
+        width: 90%;
+    }
+
+    .entry-copy {
+        font-weight: bold;
+        font-size: 18px;
+        color: #191919;
+    }
+
+    .entry-btn {
+        @extend .fv-btn;
+        width: 100%;
+        height: 50px;
+    }
+}

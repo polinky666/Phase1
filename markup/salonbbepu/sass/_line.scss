@@ -1,0 +1,19 @@
+#linearea {
+    width: 100%;
+    text-align: center;
+}
+
+.line {
+    display: inline-block;
+    border-top: 1px solid #70707036;
+    content: "";
+    width: 83%;
+    margin: 160px auto;
+
+    @include sp {
+        width: 90%;
+        margin: 60px auto;
+
+    }
+
+}
