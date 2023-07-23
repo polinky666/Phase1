@@ -1,0 +1,199 @@
+header {
+    position: absolute;
+    z-index: 20;
+
+
+
+    @include sp {
+        position: unset;
+        margin: 0;
+        height: 70px;
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 68px;
+        margin-left: 77px;
+        font-family: sans-serif;
+
+        @include tab {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: unset;
+            justify-content: space-between;
+            margin: auto 0;
+            padding: 0 20px;
+        }
+
+    }
+
+    .h-logo {
+        font-size: 3.8rem;
+
+        @include sp {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+    }
+
+    .nav {
+        margin-left: 20px;
+
+        @include tab {
+
+            margin-left: 0;
+        }
+
+    }
+
+    .ham {
+        .hambtn {
+            z-index: 500;
+
+            @include pc {
+                display: none;
+            }
+
+            @include tab {
+                display: none;
+            }
+
+            @include sp {
+                display: block;
+
+            }
+
+        }
+
+
+    }
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: #707070;
+
+    @include sp {
+        position: fixed;
+        flex-direction: column;
+        inset: 0 -100% 0 100%;
+        z-index: 100;
+        margin: 0;
+        color: #fff;
+        background-color: black;
+        opacity: 0.5;
+        justify-content: start;
+        padding: 35px;
+        transform: translateX(0%);
+        transition: transform 1.4s;
+
+        z-index: 200;
+    }
+
+    .nav-item {
+        font-size: 1.8rem;
+        margin-right: 20px;
+        position: relative;
+
+        @include sp {
+            margin-bottom: 30px;
+        }
+
+        &:after {
+            display: inline-block;
+            content: "";
+            border-top: 1px solid #000000;
+            width: 10%;
+            position: absolute;
+            top: 2.2rem;
+            left: 0;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.3s;
+
+        }
+
+        &:hover {
+            font-weight: bold;
+            color: #000000;
+
+            @include sp {
+                font-weight: bold;
+                color: #fff;
+            }
+
+
+
+            &:after {
+                transform: scaleX(10);
+
+
+            }
+        }
+    }
+}
+
+
+#hamchan {
+    display: none;
+}
+
+#hamchan:checked~.nav .nav-list {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 1.4s;
+
+
+
+
+
+}
+
+#hamchan:checked~.hambtn {
+    position: relative;
+    z-index: 500;
+}
+
+
+
+.pan {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #3B4043;
+    content: "";
+
+    &::before {
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #3B4043;
+        content: "";
+        transform: translateY(-5px);
+
+    }
+
+    &::after {
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: #3B4043;
+        content: "";
+        transform: translateY(3px);
+    }
+}

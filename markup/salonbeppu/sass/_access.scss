@@ -17,6 +17,10 @@
     padding: 260px 0 0 100px;
 
     @include tab {
+        padding: 60px 20px 0;
+    }
+
+    @include sp {
         padding: 60px 20px 50px;
     }
 
@@ -47,7 +51,7 @@
         }
     }
 
-    ul {
+    .access-list {
         padding-left: 100px;
         font-size: 1.6rem;
         color: #fff;
@@ -58,7 +62,7 @@
             padding: 0 20px 60px
         }
 
-        li {
+        .access-item {
             margin-bottom: 23px;
         }
     }

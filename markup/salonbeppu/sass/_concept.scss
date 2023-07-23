@@ -4,10 +4,16 @@
     height: 960px;
     background: linear-gradient(180deg, #A193861F 0%, #A193861F 40%, #A1938689 40%, #A1938689 100%);
 
-    @include sp {
-        height: 710px;
+    @include tab {
+        height: 800px;
         background: linear-gradient(180deg, #A193861F 0%, #A193861F 24%, #A1938689 24%, #A1938689 100%);
     }
+
+    @include sp {
+        height: 710px;
+    }
+
+
 
 }
 
@@ -18,7 +24,7 @@
 .concept-wrap {
     padding-top: 260px;
     margin-left: 100px;
-    width: 1077px;
+    width: 83%;
 
     @include tab {
         padding-top: 60px;
@@ -29,7 +35,7 @@
 
     .concept-img {
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         overflow: hidden;
 
         @include tab {

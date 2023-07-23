@@ -11,21 +11,23 @@
 
 <body>
     <header>
-        <div class="h-logo">SALON BEPPU</div>
-        <div class="ham">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header-inner">
+            <div class="h-logo">SALON BEPPU</div>
+            <div class="ham">
+                <input type="checkbox" id="hamchan">
+                <label for="hamchan" class="hambtn">
+                    <span class="pan"></span>
+                </label>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#menu">menu</a></li>
+                        <li class="nav-item"><a href="#concept">concept</a></li>
+                        <li class="nav-item"><a href="#access">access</a></li>
+                        <li class="nav-item"><a href="#reserve">ReSErve</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="nav">
-            <ul>
-                <li class="list-h">menu</li>
-                <li>concept</li>
-                <li>access</li>
-                <li>ReSErve</li>
-            </ul>
-        </nav>
-
     </header>
     <main>
         <section id="first-view">
@@ -87,11 +89,11 @@
                 <div class="access-wrap">
                     <div class="access-info">
                         <h5>池袋東口店</h5>
-                        <ul>
-                            <li>テキストテキストテキスト</li>
-                            <li>000-0000-0000</li>
-                            <li>営業時間 10:00~18:00</li>
-                            <li>定休日 第一・第三月曜日</li>
+                        <ul class="access-list">
+                            <li class="access-item">テキストテキストテキスト</li>
+                            <li class="access-item">000-0000-0000</li>
+                            <li class="access-item">営業時間 10:00~18:00</li>
+                            <li class="access-item">定休日 第一・第三月曜日</li>
                         </ul>
                     </div>
                     <div class="access-map"><iframe
@@ -105,7 +107,7 @@
             <span class="line"></span>
         </section>
     </main>
-    <footer>
+    <footer id="reserve">
         <div class="footer-wrap">
             <div class="footer-title">SALON BEPPU</div>
             <i class="fa-brands fa-twitter"></i>
@@ -113,6 +115,7 @@
         </div>
         <p class="reserve-box">RESERVE</p>
     </footer>
+    <script src="app.js"></script>
 
 </body>
 

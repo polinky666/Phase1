@@ -9,7 +9,7 @@
     margin-top: 260px;
     width: 90%;
 
-    @include sp {
+    @include tab {
         margin-top: 60px;
     }
 }

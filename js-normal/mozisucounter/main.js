@@ -20,3 +20,18 @@ resetBtn.addEventListener('click', () => {
 })
 
 //追加チャレンジ
+
+const iniDelBtn = document.getElementById('iniDel')
+const endDelBtn = document.getElementById('endDel')
+
+iniDelBtn.addEventListener('click', function () {
+    input.value = input.value.slice(1)
+    textCnt = input.value.length
+    textCounter.textContent = count(max - textCnt)
+})
+
+endDelBtn.addEventListener('click', function () {
+    input.value = input.value.slice(0, -1);
+    textCnt = input.value.length
+    textCounter.textContent = count(max - textCnt)
+})
