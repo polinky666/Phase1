@@ -1,6 +1,7 @@
 button {
   display: block;
 }
+
 img {
   width: 300px;
   height: 200px;
@@ -8,7 +9,7 @@ img {
 
 /* チャレンジ問題 */
 
-/* .btn-wrap {
+.btn-wrap {
   width: 300px;
   display: flex;
   justify-content: space-between;
@@ -16,6 +17,6 @@ img {
 
 .form-wrap {
   display: flex;
-} */
+}
 
 /* 追加チャレンジ問題 ここまで */

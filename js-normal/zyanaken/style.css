@@ -1,11 +1,14 @@
 div {
   display: flex;
   align-items: center;
+
 }
+
+
 
 /* チャレンジ問題 */
 
-/* body {
+body {
   text-align: center;
 }
 
@@ -20,4 +23,4 @@ div {
   justify-content: space-between;
   width: 40%;
   margin: 0 auto;
-} */
+}
